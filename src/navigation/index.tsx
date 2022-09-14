@@ -8,9 +8,9 @@ import * as React from "react";
 
 // importing components
 import MainHeader from "../components/MainHeader";
-// import screens
-import Counter from "../screens/Counter";
+
 import Home from "../screens/Home";
+import Nft from "../screens/NFT";
 // importing services
 import { CombinedDarkTheme } from "../services/themes";
 
@@ -31,7 +31,7 @@ const RootNavigator = () => {
         }}
       >
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Counter" component={Counter} />
+        <Stack.Screen name="Nft" component={Nft} />
       </Stack.Navigator>
     </NavigationContainer>
   );

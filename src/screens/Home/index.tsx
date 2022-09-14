@@ -5,12 +5,12 @@ import { Headline, Subheading, Button } from "react-native-paper";
 const Home = (props: any) => {
   return (
     <View style={styles.container}>
-      <Headline>React Native Everywhere</Headline>
+      <Headline>React Native Everywhere for dApp Starter</Headline>
       <Subheading>
         Open SRC to start editing the project, or check out our below example
       </Subheading>
-      <Button onPress={() => props.navigation.navigate("Counter")}>
-        Counter Example
+      <Button onPress={() => props.navigation.navigate("Nft")}>
+        NFT
       </Button>
     </View>
   );

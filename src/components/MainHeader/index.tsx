@@ -1,15 +1,22 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
-import { Appbar } from "react-native-paper";
+import { Appbar, Button } from "react-native-paper";
 
 const MainHeader = (props: any) => {
   const name = props.route.name;
 
-  if (name === "Counter") {
+  if ( name === "Nft") {
     return (
       <Appbar.Header style={styles.appMainHeader}>
         <Appbar.BackAction onPress={() => props.navigation.goBack()} />
         <Appbar.Content title={name} />
+        <Button
+          mode="text"
+          onPress={() => console.log("Pressed")}
+        >
+          Connect Wallet
+        </Button>
+   
       </Appbar.Header>
     );
   }
@@ -17,6 +24,13 @@ const MainHeader = (props: any) => {
   return (
     <Appbar.Header style={styles.appMainHeader}>
       <Appbar.Content title={name} />
+      <Button
+          mode="text"
+          compact={true}
+          onPress={() => console.log("Pressed")}
+        >
+          Connect Wallet
+        </Button>
     </Appbar.Header>
   );
 };
