@@ -1,18 +1,18 @@
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer } from '@react-navigation/native';
 import {
   createStackNavigator,
   TransitionSpecs,
   CardStyleInterpolators,
-} from "@react-navigation/stack";
-import * as React from "react";
+} from '@react-navigation/stack';
+import * as React from 'react';
 
 // importing components
-import MainHeader from "../components/MainHeader";
+import MainHeader from '../components/MainHeader';
 
-import Home from "../screens/Home";
-import Nft from "../screens/NFT";
+import Home from '../screens/Home';
+import Nft from '../screens/NFT';
 // importing services
-import { CombinedDarkTheme } from "../services/themes";
+import { CombinedDarkTheme } from '../services/themes';
 
 const Stack = createStackNavigator();
 
@@ -22,7 +22,7 @@ const RootNavigator = () => {
       <Stack.Navigator
         screenOptions={{
           header: MainHeader,
-          gestureDirection: "horizontal",
+          gestureDirection: 'horizontal',
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
           transitionSpec: {
             open: TransitionSpecs.TransitionIOSSpec,

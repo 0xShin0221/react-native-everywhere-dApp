@@ -1,6 +1,6 @@
-import * as React from "react";
-import { View, StyleSheet } from "react-native";
-import { Button, Headline } from "react-native-paper";
+import * as React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { Button, Headline } from 'react-native-paper';
 
 // // import services
 // import { useAppSelector, useAppDispatch } from "../../services/redux";
@@ -10,8 +10,8 @@ import { Button, Headline } from "react-native-paper";
 // } from "../../services/redux/reducers/DefaultReducer";
 
 const Nft = () => {
-//   const counter = useAppSelector((state) => state.root.default.counter);
-//   const dispatch = useAppDispatch();
+  //   const counter = useAppSelector((state) => state.root.default.counter);
+  //   const dispatch = useAppDispatch();
 
   return (
     <View style={styles.container}>
@@ -27,12 +27,12 @@ const Nft = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   buttonContainer: {
-    display: "flex",
-    flexDirection: "row",
+    display: 'flex',
+    flexDirection: 'row',
   },
 });
 

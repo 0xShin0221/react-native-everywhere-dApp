@@ -1,19 +1,19 @@
-import "react-native-gesture-handler";
-import * as SplashScreen from "expo-splash-screen";
-import { StatusBar } from "expo-status-bar";
-import React, { useState, useEffect, useCallback } from "react";
-import { View, Platform } from "react-native";
-import { Provider as PaperProvider } from "react-native-paper";
-import { Provider as ReduxProvider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
+import 'react-native-gesture-handler';
+import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
+import React, { useState, useEffect, useCallback } from 'react';
+import { View, Platform } from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { Provider as ReduxProvider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
 // import root navigator
-import RootNavigator from "./src/navigation";
+import RootNavigator from './src/navigation';
 // importing screens
-import SplashScreenWeb from "./src/screens/SplashScreen.web";
+import SplashScreenWeb from './src/screens/SplashScreen.web';
 // importing services
-import { store, persister } from "./src/services/redux/index";
-import { CombinedDarkTheme } from "./src/services/themes";
+import { store, persister } from './src/services/redux/index';
+import { CombinedDarkTheme } from './src/services/themes';
 
 export default function App() {
   const [isAppReady, setIsAppReady] = useState<boolean>(false);
@@ -41,7 +41,7 @@ export default function App() {
   }, [isAppReady]);
 
   if (!isAppReady) {
-    if (Platform.OS === "web") {
+    if (Platform.OS === 'web') {
       return <SplashScreenWeb />;
     }
     return null;

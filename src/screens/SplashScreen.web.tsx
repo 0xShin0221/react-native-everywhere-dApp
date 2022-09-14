@@ -1,10 +1,10 @@
-import * as React from "react";
-import { View, Image, StyleSheet } from "react-native";
+import * as React from 'react';
+import { View, Image, StyleSheet } from 'react-native';
 
 const SplashScreen = () => {
   return (
     <View style={styles.splashWrapper}>
-      <Image style={styles.icon} source={require("../../assets/icon.png")} />
+      <Image style={styles.icon} source={require('../../assets/icon.png')} />
     </View>
   );
 };
@@ -12,9 +12,9 @@ const SplashScreen = () => {
 const styles = StyleSheet.create({
   splashWrapper: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "black",
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'black',
   },
   icon: {
     width: 200,

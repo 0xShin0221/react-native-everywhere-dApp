@@ -1,12 +1,12 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
 /**
  * Action types
  * All the actions defined here will be implemented in reducer,
  * this way it's easier to manage action type strings
  */
-const INCREMENT = "increment";
-const DECREMENT = "decrement";
+const INCREMENT = 'increment';
+const DECREMENT = 'decrement';
 
 // initial state of the reducer
 const INITIAL_STATE = {

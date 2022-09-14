@@ -1,16 +1,16 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import { createLogger } from "redux-logger";
-import { persistStore, persistReducer } from "redux-persist";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import { createLogger } from 'redux-logger';
+import { persistStore, persistReducer } from 'redux-persist';
 
 // import root reducer
-import rootReducer from "./reducers/index";
+import rootReducer from './reducers/index';
 
 const persistConfig = {
-  key: "root",
+  key: 'root',
   storage: AsyncStorage,
-  whitelist: ["defaultReducer"],
+  whitelist: ['defaultReducer'],
   blacklist: [],
 }; // Middleware: Redux Persist Persisted Reducer
 

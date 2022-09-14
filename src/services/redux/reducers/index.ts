@@ -1,8 +1,8 @@
 // Imports: Dependencies
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
 // importing reducers
-import DefaultReducer from "./DefaultReducer";
+import DefaultReducer from './DefaultReducer';
 
 // Redux: Root Reducer
 const rootReducer = combineReducers({
